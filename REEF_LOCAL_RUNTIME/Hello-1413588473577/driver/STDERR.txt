@@ -1,0 +1,123 @@
+10�� 18, 2014 8:27:55 ���� snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$StartHandler onNext
+����: Requested Evaluator.
+10�� 18, 2014 8:27:56 ���� snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$EvaluatorAllocatedHandler onNext
+����: Submitting HelloREEF task to AllocatedEvaluator: AllocatedEvaluator{ID='Node-1-1413588475994'}
+10�� 18, 2014 8:27:56 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 1, Outstanding requests: 1
+10�� 18, 2014 8:27:56 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 2, Outstanding requests: 1
+10�� 18, 2014 8:27:56 ���� snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$EvaluatorAllocatedHandler onNext
+����: Submitting HelloREEF task to AllocatedEvaluator: AllocatedEvaluator{ID='Node-2-1413588476090'}
+10�� 18, 2014 8:27:56 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 3, Outstanding requests: 0
+10�� 18, 2014 8:27:56 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 3, Outstanding requests: 0
+10�� 18, 2014 8:27:56 ���� snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$EvaluatorAllocatedHandler onNext
+����: Submitting HelloREEF task to AllocatedEvaluator: AllocatedEvaluator{ID='Node-3-1413588476171'}
+10�� 18, 2014 8:27:56 ���� com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+����: Sending resource status: identifier: "Node-1-1413588475994"
+state: RUNNING
+ 
+10�� 18, 2014 8:27:56 ���� com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+����: Sending resource status: identifier: "Node-3-1413588476171"
+state: RUNNING
+ 
+10�� 18, 2014 8:27:56 ���� com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+����: Sending resource status: identifier: "Node-2-1413588476090"
+state: RUNNING
+ 
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.task.TaskRepresenter onTaskInit
+���: Received a INIT message for task with id HelloTask which we have seen before. Ignoring the second message
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskRunningHandler onNext
+����: Received TaskRuntime: RunningTask{taskId='HelloTask'}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskCompletionHandler onNext
+����: Received CompletedTask: CompletedTask{ID='HelloTask'} :: CLOSING context: EvaluatorContext{contextIdentifier='HelloContext', evaluatorIdentifier='Node-1-1413588475994', parentID=OptionalvNothing}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.task.TaskRepresenter onTaskInit
+���: Received a INIT message for task with id HelloTask which we have seen before. Ignoring the second message
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskRunningHandler onNext
+����: Received TaskRuntime: RunningTask{taskId='HelloTask'}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskCompletionHandler onNext
+����: Received CompletedTask: CompletedTask{ID='HelloTask'} :: CLOSING context: EvaluatorContext{contextIdentifier='HelloContext', evaluatorIdentifier='Node-3-1413588476171', parentID=OptionalvNothing}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskRunningHandler onNext
+����: Received TaskRuntime: RunningTask{taskId='HelloTask'}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.task.TaskRepresenter onTaskInit
+���: Received a INIT message for task with id HelloTask which we have seen before. Ignoring the second message
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskCompletionHandler onNext
+����: Received CompletedTask: CompletedTask{ID='HelloTask'} :: CLOSING context: EvaluatorContext{contextIdentifier='HelloContext', evaluatorIdentifier='Node-2-1413588476090', parentID=OptionalvNothing}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorCompletionHandler onNext
+����: Received CompletedEvaluator: CompletedEvaluator{id='Node-1-1413588475994'}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.local.driver.ContainerManager release
+����: Releasing Container with containerId [ProcessContainer{containedID='Node-1-1413588475994', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:10249', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413588473577\Node-1-1413588475994}]
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.local.driver.ProcessContainer close
+���: Force-closing a container that is still running: ProcessContainer{containedID='Node-1-1413588475994', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:10249', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413588473577\Node-1-1413588475994}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorCompletionHandler onNext
+����: Received CompletedEvaluator: CompletedEvaluator{id='Node-3-1413588476171'}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorCompletionHandler onNext
+����: Received CompletedEvaluator: CompletedEvaluator{id='Node-2-1413588476090'}
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+���: The child process survived Process.destroy()
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 2, Outstanding requests: 0
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.local.driver.ContainerManager release
+����: Releasing Container with containerId [ProcessContainer{containedID='Node-2-1413588476090', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:10249', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413588473577\Node-2-1413588476090}]
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+����: Sending resource status: identifier: "Node-1-1413588475994"
+state: DONE
+exit_code: 0
+ 
+10�� 18, 2014 8:27:59 ���� com.microsoft.reef.runtime.local.driver.ProcessContainer close
+���: Force-closing a container that is still running: ProcessContainer{containedID='Node-2-1413588476090', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:10249', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413588473577\Node-2-1413588476090}
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+���: The child process survived Process.destroy()
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 1, Outstanding requests: 0
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+����: Sending resource status: identifier: "Node-2-1413588476090"
+state: DONE
+exit_code: 0
+ 
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ContainerManager release
+����: Releasing Container with containerId [ProcessContainer{containedID='Node-3-1413588476171', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:10249', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413588473577\Node-3-1413588476171}]
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ProcessContainer close
+���: Force-closing a container that is still running: ProcessContainer{containedID='Node-3-1413588476171', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:10249', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413588473577\Node-3-1413588476171}
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+���: The child process survived Process.destroy()
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 0, Outstanding requests: 0
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+����: Sending resource status: identifier: "Node-3-1413588476171"
+state: DONE
+exit_code: 0
+ 
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ContainerManager release
+����: Ignoring release request for unknown containerID [Node-1-1413588475994]
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 0, Outstanding requests: 0
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ContainerManager release
+����: Ignoring release request for unknown containerID [Node-3-1413588476171]
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 0, Outstanding requests: 0
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ContainerManager release
+����: Ignoring release request for unknown containerID [Node-2-1413588476090]
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+����: Allocated: 0, Outstanding requests: 0
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+����: All components indicated idle. Initiating Driver shutdown.
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+����: Clean shutdown of the Driver.
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+����: All components indicated idle. Initiating Driver shutdown.
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+����: Clean shutdown of the Driver.
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+���: Illegal state transiton: 'SHUTTING_DOWN'->'SHUTTING_DOWN'
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+���: Unclean shutdown of evaluator Node-1-1413588475994
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+���: Unclean shutdown of evaluator Node-2-1413588476090
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+���: Unclean shutdown of evaluator Node-3-1413588476171
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.driver.DriverRuntimeStopHandler onNext
+����: Driver shutdown complete
+10�� 18, 2014 8:28:00 ���� com.microsoft.reef.runtime.common.Launcher main
+����: Exiting Launcher.main()

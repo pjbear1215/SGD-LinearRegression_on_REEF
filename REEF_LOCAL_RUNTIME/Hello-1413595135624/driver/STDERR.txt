@@ -1,0 +1,791 @@
+10월 18, 2014 10:18:59 오전 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$StartHandler onNext
+정보: Requested Evaluator.
+10월 18, 2014 10:18:59 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 1, Outstanding requests: 1
+10월 18, 2014 10:18:59 오전 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$EvaluatorAllocatedHandler onNext
+정보: Submitting LinearSGD_REEF task to AllocatedEvaluator: AllocatedEvaluator{ID='Node-1-1413595139411'}
+10월 18, 2014 10:18:59 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 2, Outstanding requests: 1
+10월 18, 2014 10:18:59 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 3, Outstanding requests: 0
+10월 18, 2014 10:18:59 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 3, Outstanding requests: 0
+10월 18, 2014 10:18:59 오전 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$EvaluatorAllocatedHandler onNext
+정보: Submitting LinearSGD_REEF task to AllocatedEvaluator: AllocatedEvaluator{ID='Node-3-1413595139687'}
+10월 18, 2014 10:18:59 오전 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$EvaluatorAllocatedHandler onNext
+정보: Submitting LinearSGD_REEF task to AllocatedEvaluator: AllocatedEvaluator{ID='Node-2-1413595139598'}
+10월 18, 2014 10:19:00 오전 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-1-1413595139411"
+state: RUNNING
+ 
+10월 18, 2014 10:19:00 오전 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-2-1413595139598"
+state: RUNNING
+ 
+10월 18, 2014 10:19:00 오전 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-3-1413595139687"
+state: RUNNING
+ 
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskRunningHandler onNext
+정보: Received TaskRuntime: RunningTask{taskId='LinearSGD_Task'}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.task.TaskRepresenter onTaskInit
+경고: Received a INIT message for task with id LinearSGD_Task which we have seen before. Ignoring the second message
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskCompletionHandler onNext
+정보: Received CompletedTask: CompletedTask{ID='LinearSGD_Task'} :: CLOSING context: EvaluatorContext{contextIdentifier='HelloContext', evaluatorIdentifier='Node-3-1413595139687', parentID=OptionalvNothing}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.task.TaskRepresenter onTaskInit
+경고: Received a INIT message for task with id LinearSGD_Task which we have seen before. Ignoring the second message
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskRunningHandler onNext
+정보: Received TaskRuntime: RunningTask{taskId='LinearSGD_Task'}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskCompletionHandler onNext
+정보: Received CompletedTask: CompletedTask{ID='LinearSGD_Task'} :: CLOSING context: EvaluatorContext{contextIdentifier='HelloContext', evaluatorIdentifier='Node-1-1413595139411', parentID=OptionalvNothing}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorCompletionHandler onNext
+정보: Received CompletedEvaluator: CompletedEvaluator{id='Node-3-1413595139687'}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Releasing Container with containerId [ProcessContainer{containedID='Node-3-1413595139687', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-3-1413595139687}]
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-3-1413595139687', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-3-1413595139687}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorCompletionHandler onNext
+정보: Received CompletedEvaluator: CompletedEvaluator{id='Node-1-1413595139411'}
+10월 18, 2014 10:19:04 오전 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0xf1661b68, /169.254.245.8:2476 => /169.254.245.8:13812] local: /169.254.245.8:13812 remote: /169.254.245.8:2476
+10월 18, 2014 10:19:04 오전 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 18, 2014 10:19:04 오전 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:13812 remote: /169.254.245.8:2476 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskRunningHandler onNext
+정보: Received TaskRuntime: RunningTask{taskId='LinearSGD_Task'}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.task.TaskRepresenter onTaskInit
+경고: Received a INIT message for task with id LinearSGD_Task which we have seen before. Ignoring the second message
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskCompletionHandler onNext
+정보: Received CompletedTask: CompletedTask{ID='LinearSGD_Task'} :: CLOSING context: EvaluatorContext{contextIdentifier='HelloContext', evaluatorIdentifier='Node-2-1413595139598', parentID=OptionalvNothing}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 2, Outstanding requests: 0
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Ignoring release request for unknown containerID [Node-3-1413595139687]
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 2, Outstanding requests: 0
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-3-1413595139687"
+state: FAILED
+exit_code: 1
+ 
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Releasing Container with containerId [ProcessContainer{containedID='Node-1-1413595139411', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-1-1413595139411}]
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-1-1413595139411', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-1-1413595139411}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultClientCloseHandler onNext
+경고: Received a close message from the client, but no handler was bound for it. Active threads: 
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-6':
+		java.lang.Thread.dumpThreads(Native Method)
+		java.lang.Thread.getAllStackTraces(Thread.java:1640)
+		org.apache.reef.util.ThreadLogger.getFormattedThreadList(ThreadLogger.java:67)
+		org.apache.reef.util.ThreadLogger.getFormattedThreadList(ThreadLogger.java:80)
+		com.microsoft.reef.runtime.common.driver.defaults.DefaultClientCloseHandler.onNext(DefaultClientCloseHandler.java:38)
+		com.microsoft.reef.runtime.common.driver.defaults.DefaultClientCloseHandler.onNext(DefaultClientCloseHandler.java:28)
+		com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+		com.microsoft.reef.runtime.common.driver.client.ClientManager.onNext(ClientManager.java:96)
+		com.microsoft.reef.runtime.common.driver.client.ClientManager.onNext(ClientManager.java:40)
+		com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:137)
+		com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:34)
+		com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:167)
+		com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:149)
+		com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+		java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+		java.util.concurrent.FutureTask.run(FutureTask.java:262)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Attach Listener':
+	Thread 'com.microsoft.wake.remote.impl.RemoteSenderStage-pool-6-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-3':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Finalizer':
+		java.lang.Object.wait(Native Method)
+		java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+		java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+		java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerWorker-pool-4-thread-1':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-2':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Reference Handler':
+		java.lang.Object.wait(Native Method)
+		java.lang.Object.wait(Object.java:503)
+		java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerBoss-pool-3-thread-1':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Signal Dispatcher':
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-4':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Thread-4':
+		java.lang.Thread.sleep(Native Method)
+		com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:112)
+		com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:96)
+		com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:70)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-4':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-5':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.RemoteSenderStage-pool-6-thread-2':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-5':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerWorker-pool-4-thread-2':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Node-3-1413595139687-pool-9-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Thread-2':
+		java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+		java.lang.ProcessImpl.waitFor(ProcessImpl.java:448)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:158)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-3':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportClientWorker-pool-5-thread-1':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Node-2-1413595139598-pool-8-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-2':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Thread-3':
+		java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+		java.lang.ProcessImpl.waitFor(ProcessImpl.java:448)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:158)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'main':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2176)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.cancel(RunnableProcess.java:183)
+		com.microsoft.reef.runtime.local.driver.ProcessContainer.close(ProcessContainer.java:137)
+		com.microsoft.reef.runtime.local.driver.ContainerManager.release(ContainerManager.java:162)
+		com.microsoft.reef.runtime.local.driver.ResourceManager.onResourceReleaseRequest(ResourceManager.java:117)
+		com.microsoft.reef.runtime.local.driver.LocalResourceReleaseHandler.onNext(LocalResourceReleaseHandler.java:42)
+		com.microsoft.reef.runtime.local.driver.LocalResourceReleaseHandler.onNext(LocalResourceReleaseHandler.java:29)
+		com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager$1.onNext(EvaluatorManager.java:176)
+		com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager$1.onNext(EvaluatorManager.java:173)
+		com.microsoft.wake.time.event.Alarm.handle(Alarm.java:34)
+		com.microsoft.wake.time.runtime.RuntimeClock.run(RuntimeClock.java:215)
+		com.microsoft.reef.runtime.common.launch.LaunchClass.run(LaunchClass.java:159)
+		com.microsoft.reef.runtime.common.Launcher.main(Launcher.java:108)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerWorker-pool-4-thread-3':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Node-1-1413595139411-pool-7-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-6':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.launch.REEFErrorHandler onNext
+심각: Uncaught exception.
+java.lang.RuntimeException: Received a close message from the client, but no handler was bound for it. Active threads: 
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-6':
+		java.lang.Thread.dumpThreads(Native Method)
+		java.lang.Thread.getAllStackTraces(Thread.java:1640)
+		org.apache.reef.util.ThreadLogger.getFormattedThreadList(ThreadLogger.java:67)
+		org.apache.reef.util.ThreadLogger.getFormattedThreadList(ThreadLogger.java:80)
+		com.microsoft.reef.runtime.common.driver.defaults.DefaultClientCloseHandler.onNext(DefaultClientCloseHandler.java:38)
+		com.microsoft.reef.runtime.common.driver.defaults.DefaultClientCloseHandler.onNext(DefaultClientCloseHandler.java:28)
+		com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+		com.microsoft.reef.runtime.common.driver.client.ClientManager.onNext(ClientManager.java:96)
+		com.microsoft.reef.runtime.common.driver.client.ClientManager.onNext(ClientManager.java:40)
+		com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:137)
+		com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:34)
+		com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:167)
+		com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:149)
+		com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+		java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+		java.util.concurrent.FutureTask.run(FutureTask.java:262)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Attach Listener':
+	Thread 'com.microsoft.wake.remote.impl.RemoteSenderStage-pool-6-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-3':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Finalizer':
+		java.lang.Object.wait(Native Method)
+		java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:135)
+		java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:151)
+		java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerWorker-pool-4-thread-1':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-2':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Reference Handler':
+		java.lang.Object.wait(Native Method)
+		java.lang.Object.wait(Object.java:503)
+		java.lang.ref.Reference$ReferenceHandler.run(Reference.java:133)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerBoss-pool-3-thread-1':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Signal Dispatcher':
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-4':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Thread-4':
+		java.lang.Thread.sleep(Native Method)
+		com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:112)
+		com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:96)
+		com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:70)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-4':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-5':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.RemoteSenderStage-pool-6-thread-2':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Pull-pool-2-thread-5':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerWorker-pool-4-thread-2':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Node-3-1413595139687-pool-9-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Thread-2':
+		java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+		java.lang.ProcessImpl.waitFor(ProcessImpl.java:448)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:158)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-3':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportClientWorker-pool-5-thread-1':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Node-2-1413595139598-pool-8-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-2':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Thread-3':
+		java.lang.ProcessImpl.waitForInterruptibly(Native Method)
+		java.lang.ProcessImpl.waitFor(ProcessImpl.java:448)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:158)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'main':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2176)
+		com.microsoft.reef.runtime.local.process.RunnableProcess.cancel(RunnableProcess.java:183)
+		com.microsoft.reef.runtime.local.driver.ProcessContainer.close(ProcessContainer.java:137)
+		com.microsoft.reef.runtime.local.driver.ContainerManager.release(ContainerManager.java:162)
+		com.microsoft.reef.runtime.local.driver.ResourceManager.onResourceReleaseRequest(ResourceManager.java:117)
+		com.microsoft.reef.runtime.local.driver.LocalResourceReleaseHandler.onNext(LocalResourceReleaseHandler.java:42)
+		com.microsoft.reef.runtime.local.driver.LocalResourceReleaseHandler.onNext(LocalResourceReleaseHandler.java:29)
+		com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager$1.onNext(EvaluatorManager.java:176)
+		com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager$1.onNext(EvaluatorManager.java:173)
+		com.microsoft.wake.time.event.Alarm.handle(Alarm.java:34)
+		com.microsoft.wake.time.runtime.RuntimeClock.run(RuntimeClock.java:215)
+		com.microsoft.reef.runtime.common.launch.LaunchClass.run(LaunchClass.java:159)
+		com.microsoft.reef.runtime.common.Launcher.main(Launcher.java:108)
+	Thread 'com.microsoft.wake.remote.transport.netty.NettyMessagingTransportServerWorker-pool-4-thread-3':
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+		sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+		sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+		sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:87)
+		sun.nio.ch.SelectorImpl.select(SelectorImpl.java:98)
+		io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:622)
+		io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:310)
+		io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'Node-1-1413595139411-pool-7-thread-1':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.park(LockSupport.java:186)
+		java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2043)
+		java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	Thread 'com.microsoft.wake.remote.impl.OrderedRemoteReceiverStage_Push-pool-1-thread-6':
+		sun.misc.Unsafe.park(Native Method)
+		java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:226)
+		java.util.concurrent.SynchronousQueue$TransferStack.awaitFulfill(SynchronousQueue.java:460)
+		java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:359)
+		java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:942)
+		java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1068)
+		java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+		java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+		java.lang.Thread.run(Thread.java:745)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultClientCloseHandler.onNext(DefaultClientCloseHandler.java:41)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultClientCloseHandler.onNext(DefaultClientCloseHandler.java:28)
+	at com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+	at com.microsoft.reef.runtime.common.driver.client.ClientManager.onNext(ClientManager.java:96)
+	at com.microsoft.reef.runtime.common.driver.client.ClientManager.onNext(ClientManager.java:40)
+	at com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:137)
+	at com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:34)
+	at com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:167)
+	at com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:149)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 1, Outstanding requests: 0
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorCompletionHandler onNext
+정보: Received CompletedEvaluator: CompletedEvaluator{id='Node-2-1413595139598'}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager close
+경고: Force resource release because the client closed the clock.
+java.lang.IllegalStateException: Scheduling alarm on a closed clock
+	at com.microsoft.wake.time.runtime.RuntimeClock.scheduleAlarm(RuntimeClock.java:78)
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.close(EvaluatorManager.java:173)
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onEvaluatorDone(EvaluatorManager.java:345)
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onEvaluatorStatusMessage(EvaluatorManager.java:322)
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onEvaluatorHeartbeatMessage(EvaluatorManager.java:298)
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorHeartbeatHandler.onNext(EvaluatorHeartbeatHandler.java:58)
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorHeartbeatHandler.onNext(EvaluatorHeartbeatHandler.java:33)
+	at com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:143)
+	at com.microsoft.wake.remote.impl.HandlerContainer.onNext(HandlerContainer.java:34)
+	at com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:167)
+	at com.microsoft.wake.remote.impl.OrderedPullEventHandler.onNext(OrderedRemoteReceiverStage.java:149)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager close
+경고: Dirty shutdown with outstanding containers.
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager close
+경고: Force shutdown of: ProcessContainer{containedID='Node-2-1413595139598', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-2-1413595139598}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-2-1413595139598', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-2-1413595139598}
+10월 18, 2014 10:19:04 오전 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x024d0d02, /169.254.245.8:2477 => /169.254.245.8:13812] local: /169.254.245.8:13812 remote: /169.254.245.8:2477
+10월 18, 2014 10:19:04 오전 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 18, 2014 10:19:04 오전 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:13812 remote: /169.254.245.8:2477 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Releasing Container with containerId [ProcessContainer{containedID='Node-2-1413595139598', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-2-1413595139598}]
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+경고: Unclean shutdown of evaluator Node-1-1413595139411
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-2-1413595139598', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:13812', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\Hello-1413595135624\Node-2-1413595139598}
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+경고: Unclean shutdown of evaluator Node-3-1413595139687
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+경고: Unclean shutdown of evaluator Node-2-1413595139598
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 0, Outstanding requests: 0
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+정보: All components indicated idle. Initiating Driver shutdown.
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'SHUTTING_DOWN'->'SHUTTING_DOWN'
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Ignoring release request for unknown containerID [Node-1-1413595139411]
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 0, Outstanding requests: 0
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+정보: All components indicated idle. Initiating Driver shutdown.
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'SHUTTING_DOWN'->'SHUTTING_DOWN'
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Ignoring release request for unknown containerID [Node-2-1413595139598]
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-1-1413595139411"
+state: DONE
+exit_code: 0
+ 
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+정보: All components indicated idle. Initiating Driver shutdown.
+10월 18, 2014 10:19:04 오전 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 0, Outstanding requests: 0
+10월 18, 2014 10:19:05 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 18, 2014 10:19:05 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'SHUTTING_DOWN'->'SHUTTING_DOWN'
+10월 18, 2014 10:19:05 오전 com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+정보: All components indicated idle. Initiating Driver shutdown.
+10월 18, 2014 10:19:05 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 18, 2014 10:19:05 오전 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'SHUTTING_DOWN'->'SHUTTING_DOWN'
+10월 18, 2014 10:19:05 오전 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-2-1413595139598"
+state: FAILED
+exit_code: 1
+ 
+10월 18, 2014 10:19:06 오전 com.microsoft.wake.remote.transport.netty.NettyMessagingTransport open
+경고: Connection refused. Retry 1 of 3
+10월 18, 2014 10:19:14 오전 com.microsoft.wake.remote.impl.RemoteSenderStage close
+경고: Executor did not terminate in 10,000 ms.
+10월 18, 2014 10:19:14 오전 com.microsoft.wake.remote.transport.netty.NettyMessagingTransport open
+경고: Thread Thread[com.microsoft.wake.remote.impl.RemoteSenderStage-pool-6-thread-3,5,main] interrupted while sleeping
+10월 18, 2014 10:19:14 오전 com.microsoft.wake.remote.impl.RemoteSenderStage close
+경고: Executor dropped 0 tasks.
+10월 18, 2014 10:19:14 오전 com.microsoft.reef.runtime.common.driver.DriverRuntimeStopHandler onNext
+정보: Driver shutdown complete
+10월 18, 2014 10:19:14 오전 com.microsoft.reef.runtime.common.Launcher main
+정보: Exiting Launcher.main()
