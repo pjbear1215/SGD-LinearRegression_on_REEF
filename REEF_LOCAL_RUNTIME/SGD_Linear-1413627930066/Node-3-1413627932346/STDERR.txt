@@ -1,0 +1,21 @@
+10월 18, 2014 7:25:35 오후 com.microsoft.reef.runtime.common.evaluator.context.defaults.DefaultContextStartHandler onNext
+정보: DefaultContextStartHandler received: com.microsoft.reef.runtime.common.evaluator.context.ContextStartImpl@361b9546
+10월 18, 2014 7:25:37 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask1 on NameServer /169.254.245.8:5678
+10월 18, 2014 7:25:37 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask2 on NameServer /169.254.245.8:5678
+10월 18, 2014 7:25:37 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask3 on NameServer /169.254.245.8:5678
+10월 18, 2014 7:25:37 오후 com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime run
+경고: Caught an exception during Task.call().
+java.lang.ArrayIndexOutOfBoundsException: 6
+	at com.microsoft.reef.examples.groupcomm.matmul.DenseVector.get(DenseVector.java:42)
+	at snu.BDCS.SGD_Linear_Regression.VectorConcat.apply(VectorConcat.java:36)
+	at snu.BDCS.SGD_Linear_Regression.VectorConcat.apply(VectorConcat.java:20)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.ReduceOp$Receiver.reduce(ReduceOp.java:118)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.ReduceOp$Receiver.reduce(ReduceOp.java:106)
+	at snu.BDCS.SGD_Linear_Regression.ControllerTask.call(ControllerTask.java:94)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.runTask(TaskRuntime.java:262)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.run(TaskRuntime.java:123)
+	at java.lang.Thread.run(Thread.java:745)
+

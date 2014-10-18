@@ -1,0 +1,2 @@
+10월 18, 2014 7:12:30 오후 com.microsoft.reef.runtime.common.evaluator.context.defaults.DefaultContextStartHandler onNext
+정보: DefaultContextStartHandler received: com.microsoft.reef.runtime.common.evaluator.context.ContextStartImpl@669ca370

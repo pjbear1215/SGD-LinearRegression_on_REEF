@@ -25,6 +25,9 @@
         <module name="SGD_Linear_Regression" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="SGD_Linear_Regression" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
 
