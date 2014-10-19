@@ -27,7 +27,7 @@ import java.util.logging.Logger;
 public class ComputeTask implements Task {
     private final Logger logger = Logger.getLogger(ComputeTask.class
             .getName());
-    private static final double RUNNING_RATE = 1;
+    private static final double RUNNING_RATE = 0.001;
     private static Vector theta = new DenseVector(6);
     /**
      * The Group Communication Operators that are needed by this task. These
@@ -63,22 +63,35 @@ public class ComputeTask implements Task {
         System.out.print("Waiting for scatterReceive\n");
         List<Vector> exampleSet = scatterReceiver.receive();
         logger.log(Level.INFO, "Received: " + exampleSet);
-        System.out.print("Received: \n" + exampleSet);
+        System.out.print("Received: " + exampleSet + "\n");
 
-        // Compute partial product Ax
-        computeTheta(exampleSet);
-        // Send up the aggregation(concatenation) tree
-        // to the controller task
-        reduceSender.send(theta);
+        if (!exampleSet.isEmpty()) {
+            computeTheta(exampleSet);
+            reduceSender.send(theta);
+        } else {
+            Vector zero = new DenseVector(6);
+            for (int i=0; i<6; i++) zero.set(i, 0.0);
+            reduceSender.send(zero);
+        }
         return null;
     }
 
     private void computeTheta(List<Vector> exampleSet) {
-        int i = 0;
+        double temp = 0;
+        Vector previous_theta;
         for (Vector example : exampleSet) {
-            for (; i<6; i++) {
-                theta.set(i, (theta.get(i) - (RUNNING_RATE * (theta.dot(example) - example.get(6)))));
+            Vector next_theta = new DenseVector(6);
+            for (int i = 0; i<6; i++) {
+                previous_theta = theta;
+                double hypothesis = previous_theta.dot(example);
+                temp = (theta.get(i) - (RUNNING_RATE * (hypothesis - example.get(6)) * example.get(i)));
+                System.out.print(theta.get(i)+" - "+RUNNING_RATE+" * ("+hypothesis+" - "+example.get(6)+") *"+example.get(i)+" = ");
+                next_theta.set(i, temp);
+                System.out.print(temp + " = ");
+                System.out.print(next_theta.get(i)+"\n");
             }
+            theta = next_theta;
+            System.out.print("The result of computeTheta: " + theta + "\n");
         }
     }
 }

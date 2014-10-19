@@ -5,33 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="20833503-af44-448c-be06-a2cbf28e2e6b" name="Default" comment="Create a skeleton based on the REEF tutorial.">
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_checkpoint_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_common_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_io_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_poison_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_runtime_local_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_runtime_yarn_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_utils_hadoop_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__com_microsoft_reef_reef_webserver_0_8.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__net_jcip_jcip_annotations_1_0.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__org_apache_avro_avro_1_7_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__org_apache_commons_commons_math3_3_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__org_mortbay_jetty_servlet_api_2_5_20081211.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\.idea\libraries\Maven__org_xerial_snappy_snappy_java_1_0_5.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\SGD_Linear_Regression.iml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\src\main\java\snu\BDCS\SGD_Linear_Regression\LinearSGD_Task.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_Driver.java" afterPath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_Driver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_REEF.java" afterPath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_REEF.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_reef_reef_annotations_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_reef_reef_annotations_0_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_tang_tang_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_tang_tang_0_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_wake_wake_0_8.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_microsoft_wake_wake_0_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/REEF_LOCAL_RUNTIME/Hello-1413589192508/driver/STDERR.txt" afterPath="$PROJECT_DIR$/REEF_LOCAL_RUNTIME/Hello-1413589192508/driver/STDERR.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/REEF_LOCAL_RUNTIME/Hello-1413595135624/driver/STDERR.txt" afterPath="$PROJECT_DIR$/REEF_LOCAL_RUNTIME/Hello-1413595135624/driver/STDERR.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/REEF_LOCAL_RUNTIME/Hello-1413595138307/driver/STDERR.txt" afterPath="$PROJECT_DIR$/REEF_LOCAL_RUNTIME/Hello-1413595138307/driver/STDERR.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jw.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jw.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MOVED" beforePath="C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\src\main\java\snu\BDCS\SGD_Linear_Regression\VectorConcat.java" afterPath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorAverage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ComputeTask.java" afterPath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ComputeTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ControllerTask.java" afterPath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ControllerTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/TaskSubmitter.java" afterPath="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/TaskSubmitter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SGD_Linear_Regression.iws" />
@@ -58,8 +35,8 @@
       <file leaf-file-name="LinearSGD_Driver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="60.103447" vertical-offset="3016" max-vertical-offset="3515">
-              <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+            <state vertical-scroll-proportion="3.862069" vertical-offset="1417" max-vertical-offset="2775">
+              <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,7 +47,7 @@
       <file leaf-file-name="TaskSubmitter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/TaskSubmitter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="5016">
+            <state vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="3960">
               <caret line="53" column="7" selection-start-line="53" selection-start-column="7" selection-end-line="53" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -82,18 +59,18 @@
       <file leaf-file-name="VectorCodec.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorCodec.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="304" max-vertical-offset="1064">
-              <caret line="45" column="57" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="840">
+              <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VectorConcat.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorConcat.java">
+      <file leaf-file-name="VectorAverage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorAverage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="825">
+              <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +81,7 @@
       <file leaf-file-name="Vector.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/microsoft/reef/shimoga/0.1-SNAPSHOT/shimoga-0.1-SNAPSHOT.jar!/com/microsoft/reef/examples/groupcomm/matmul/Vector.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.92" vertical-offset="18" max-vertical-offset="589">
+            <state vertical-scroll-proportion="-7.68" vertical-offset="18" max-vertical-offset="589">
               <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
               <folding />
             </state>
@@ -114,18 +91,18 @@
       <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.896552" vertical-offset="1544" max-vertical-offset="3173">
+            <state vertical-scroll-proportion="-0.55172414" vertical-offset="1544" max-vertical-offset="3173">
               <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComputeTask.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ComputeTask.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ComputeTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.689655" vertical-offset="945" max-vertical-offset="1672">
-              <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="1515">
+              <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,8 +113,8 @@
       <file leaf-file-name="AbstractVector.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/com/microsoft/reef/shimoga/0.1-SNAPSHOT/shimoga-0.1-SNAPSHOT.jar!/com/microsoft/reef/examples/groupcomm/matmul/AbstractVector.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.4" vertical-offset="94" max-vertical-offset="665">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state vertical-scroll-proportion="-5.36" vertical-offset="76" max-vertical-offset="665">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -146,18 +123,18 @@
       <file leaf-file-name="LinearSGD_REEF.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_REEF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="2451">
-              <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="379" max-vertical-offset="1935">
+              <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerTask.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ControllerTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ControllerTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4638448" vertical-offset="6501" max-vertical-offset="8417">
-              <caret line="356" column="58" selection-start-line="356" selection-start-column="58" selection-end-line="356" selection-end-column="58" />
+            <state vertical-scroll-proportion="-133.54839" vertical-offset="0" max-vertical-offset="6420">
+              <caret line="276" column="28" selection-start-line="276" selection-start-column="28" selection-end-line="276" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -193,11 +170,12 @@
         <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/DenseVector.java" />
         <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorCodec.java" />
         <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_REEF.java" />
-        <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorConcat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ComputeTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_Driver.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorConcat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorAverage.java" />
         <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ControllerTask.java" />
+        <option value="$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ComputeTask.java" />
       </list>
     </option>
   </component>
@@ -213,6 +191,22 @@
     <option name="y" value="-8" />
     <option name="width" value="1874" />
     <option name="height" value="1096" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Abstraction issues</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -319,7 +313,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
@@ -588,7 +582,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25578833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -938,42 +932,40 @@
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/microsoft/reef/shimoga/0.1-SNAPSHOT/shimoga-0.1-SNAPSHOT.jar!/com/microsoft/reef/examples/groupcomm/matmul/Vector.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.92" vertical-offset="18" max-vertical-offset="589">
+        <state vertical-scroll-proportion="-7.68" vertical-offset="18" max-vertical-offset="589">
           <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.55172414" vertical-offset="1544" max-vertical-offset="3173">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/microsoft/reef/shimoga/0.1-SNAPSHOT/shimoga-0.1-SNAPSHOT.jar!/com/microsoft/reef/examples/groupcomm/matmul/AbstractVector.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.4" vertical-offset="94" max-vertical-offset="665">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state vertical-scroll-proportion="-5.36" vertical-offset="76" max-vertical-offset="665">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorCodec.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="140" max-vertical-offset="1064">
-          <caret line="45" column="57" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="840">
+          <caret line="42" column="38" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorConcat.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/VectorAverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="60.103447" vertical-offset="3016" max-vertical-offset="3515">
-          <caret line="81" column="44" selection-start-line="81" selection-start-column="44" selection-end-line="81" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="199" max-vertical-offset="825">
+          <caret line="43" column="18" selection-start-line="43" selection-start-column="18" selection-end-line="43" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -990,38 +982,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_Driver.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.896552" vertical-offset="1544" max-vertical-offset="3173">
-          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_REEF.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="532" max-vertical-offset="2451">
-          <caret line="58" column="23" selection-start-line="58" selection-start-column="23" selection-end-line="58" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ComputeTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.689655" vertical-offset="945" max-vertical-offset="1672">
-          <caret line="65" column="54" selection-start-line="65" selection-start-column="54" selection-end-line="65" selection-end-column="54" />
+        <state vertical-scroll-proportion="3.862069" vertical-offset="1417" max-vertical-offset="2775">
+          <caret line="101" column="13" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/LinearSGD_REEF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1855" max-vertical-offset="2451">
+          <caret line="51" column="44" selection-start-line="51" selection-start-column="44" selection-end-line="51" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ControllerTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4638448" vertical-offset="6501" max-vertical-offset="8417">
-          <caret line="356" column="58" selection-start-line="356" selection-start-column="58" selection-end-line="356" selection-end-column="58" />
+        <state vertical-scroll-proportion="-133.54839" vertical-offset="0" max-vertical-offset="6420">
+          <caret line="276" column="28" selection-start-line="276" selection-start-column="28" selection-end-line="276" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/snu/BDCS/SGD_Linear_Regression/ComputeTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.71428573" vertical-offset="0" max-vertical-offset="1515">
+          <caret line="29" column="51" selection-start-line="29" selection-start-column="51" selection-end-line="29" selection-end-column="51" />
+          <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>

@@ -1,0 +1,20 @@
+10월 19, 2014 3:18:22 오후 com.microsoft.reef.runtime.common.evaluator.context.defaults.DefaultContextStartHandler onNext
+정보: DefaultContextStartHandler received: com.microsoft.reef.runtime.common.evaluator.context.ContextStartImpl@7dce092
+10월 19, 2014 3:18:25 오후 snu.BDCS.SGD_Linear_Regression.ControllerTask call
+정보: Scattering Data
+10월 19, 2014 3:18:25 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask1 on NameServer /169.254.245.8:5678
+10월 19, 2014 3:18:25 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask2 on NameServer /169.254.245.8:5678
+10월 19, 2014 3:18:25 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask3 on NameServer /169.254.245.8:5678
+10월 19, 2014 3:18:25 오후 snu.BDCS.SGD_Linear_Regression.ControllerTask call
+정보: Finished Scattering Data
+10월 19, 2014 3:18:25 오후 com.microsoft.reef.runtime.common.evaluator.context.ContextRuntime close
+경고: Shutting down a task because the underlying context is being closed.
+10월 19, 2014 3:18:25 오후 com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime close
+경고: Trying to close a task that is in state: DONE. Ignoring.
+10월 19, 2014 3:18:25 오후 com.microsoft.reef.runtime.common.evaluator.context.defaults.DefaultContextStopHandler onNext
+정보: DefaultContextStopHandler received: com.microsoft.reef.runtime.common.evaluator.context.ContextStopImpl@5a95ed49
+10월 19, 2014 3:18:25 오후 com.microsoft.reef.runtime.common.Launcher main
+정보: Exiting Launcher.main()

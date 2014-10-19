@@ -1,0 +1,583 @@
+10월 19, 2014 3:05:33 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver <init>
+정보: Instantiated 'LinearSGD_Driver'
+10월 19, 2014 3:05:33 오후 snu.BDCS.SGD_Linear_Regression.TaskSubmitter <init>
+정보: Setting Up identifiers & ports for the network service to listen on
+10월 19, 2014 3:05:34 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$StartHandler onNext
+정보: StartTime: com.microsoft.wake.time.event.StartTime[1413698734065]
+10월 19, 2014 3:05:34 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$AllocatedEvaluatorHandler onNext
+정보: Received an AllocatedEvaluator. Submitting it.
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 1, Outstanding requests: 1
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 2, Outstanding requests: 1
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 3, Outstanding requests: 1
+10월 19, 2014 3:05:34 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$AllocatedEvaluatorHandler onNext
+정보: Received an AllocatedEvaluator. Submitting it.
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 4, Outstanding requests: 0
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 4, Outstanding requests: 0
+10월 19, 2014 3:05:34 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$AllocatedEvaluatorHandler onNext
+정보: Received an AllocatedEvaluator. Submitting it.
+10월 19, 2014 3:05:34 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$AllocatedEvaluatorHandler onNext
+정보: Received an AllocatedEvaluator. Submitting it.
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-3-1413698734297"
+state: RUNNING
+ 
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-1-1413698734073"
+state: RUNNING
+ 
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-2-1413698734234"
+state: RUNNING
+ 
+10월 19, 2014 3:05:34 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-4-1413698734332"
+state: RUNNING
+ 
+10월 19, 2014 3:05:37 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$ActiveContextHandler onNext
+정보: Received a RunningEvaluator with ID: SGD_Linear
+10월 19, 2014 3:05:37 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$ActiveContextHandler onNext
+정보: Received a RunningEvaluator with ID: SGD_Linear
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$ActiveContextHandler onNext
+정보: Received a RunningEvaluator with ID: SGD_Linear
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$ActiveContextHandler onNext
+정보: Received a RunningEvaluator with ID: SGD_Linear
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.TaskSubmitter onNext
+정보: All context are running
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.TaskSubmitter onNext
+정보: Setting Up Structures for creating Group Comm Operator Configurations
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.TaskSubmitter onNext
+정보: Registering ComputeTask1 with jw-PC:7001
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.TaskSubmitter onNext
+정보: Registering ComputeTask2 with jw-PC:7002
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.TaskSubmitter onNext
+정보: Registering ComputeTask3 with jw-PC:7003
+10월 19, 2014 3:05:38 오후 snu.BDCS.SGD_Linear_Regression.TaskSubmitter onNext
+정보: Creating Operator Configs
+10월 19, 2014 3:05:39 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$RunningTaskHandler onNext
+정보: Task "ComputeTask1" is running!
+10월 19, 2014 3:05:39 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$RunningTaskHandler onNext
+정보: Task "ComputeTask2" is running!
+10월 19, 2014 3:05:39 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$RunningTaskHandler onNext
+정보: Task "ComputeTask3" is running!
+10월 19, 2014 3:05:39 오후 snu.BDCS.SGD_Linear_Regression.LinearSGD_Driver$RunningTaskHandler onNext
+정보: Task "ControllerTask" is running!
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onError
+경고: Shutting down the Driver with an exception: 
+java.lang.RuntimeException: No handler bound for FailedTask: com.microsoft.reef.driver.task.FailedTask id=ComputeTask3 failed: Task.call() threw an Exception.
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskFailureHandler.onNext(DefaultTaskFailureHandler.java:34)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskFailureHandler.onNext(DefaultTaskFailureHandler.java:26)
+	at com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+	at com.microsoft.reef.util.ExceptionHandlingEventHandler.onNext(ExceptionHandlingEventHandler.java:42)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:82)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:79)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.microsoft.reef.runtime.common.evaluator.task.exceptions.TaskCallFailure: Task.call() threw an Exception.
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.runTask(TaskRuntime.java:267)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.run(TaskRuntime.java:123)
+	... 1 more
+Caused by: java.lang.NullPointerException
+	at snu.BDCS.SGD_Linear_Regression.VectorCodec.encode(VectorCodec.java:44)
+	at snu.BDCS.SGD_Linear_Regression.VectorCodec.encode(VectorCodec.java:18)
+	at com.microsoft.reef.io.network.group.impl.operators.SenderHelperImpl.send(SenderHelperImpl.java:61)
+	at com.microsoft.reef.io.network.group.impl.operators.SenderHelperImpl.send(SenderHelperImpl.java:49)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.GatherOp$Sender.send(GatherOp.java:65)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.ReduceOp$Sender.send(ReduceOp.java:63)
+	at snu.BDCS.SGD_Linear_Regression.ComputeTask.call(ComputeTask.java:72)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.runTask(TaskRuntime.java:262)
+	... 2 more
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onError
+경고: Shutting down the Driver with an exception: 
+java.lang.RuntimeException: No handler bound for FailedTask: com.microsoft.reef.driver.task.FailedTask id=ComputeTask2 failed: Task.call() threw an Exception.
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskFailureHandler.onNext(DefaultTaskFailureHandler.java:34)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultTaskFailureHandler.onNext(DefaultTaskFailureHandler.java:26)
+	at com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+	at com.microsoft.reef.util.ExceptionHandlingEventHandler.onNext(ExceptionHandlingEventHandler.java:42)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:82)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:79)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.microsoft.reef.runtime.common.evaluator.task.exceptions.TaskCallFailure: Task.call() threw an Exception.
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.runTask(TaskRuntime.java:267)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.run(TaskRuntime.java:123)
+	... 1 more
+Caused by: java.lang.NullPointerException
+	at snu.BDCS.SGD_Linear_Regression.VectorCodec.encode(VectorCodec.java:44)
+	at snu.BDCS.SGD_Linear_Regression.VectorCodec.encode(VectorCodec.java:18)
+	at com.microsoft.reef.io.network.group.impl.operators.SenderHelperImpl.send(SenderHelperImpl.java:61)
+	at com.microsoft.reef.io.network.group.impl.operators.SenderHelperImpl.send(SenderHelperImpl.java:49)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.GatherOp$Sender.send(GatherOp.java:65)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.ReduceOp$Sender.send(ReduceOp.java:63)
+	at snu.BDCS.SGD_Linear_Regression.ComputeTask.call(ComputeTask.java:72)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.runTask(TaskRuntime.java:262)
+	... 2 more
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'FAILING'->'FAILING'
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager close
+경고: Dirty shutdown with outstanding containers.
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager close
+경고: Force shutdown of: ProcessContainer{containedID='Node-1-1413698734073', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-1-1413698734073}
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-1-1413698734073', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-1-1413698734073}
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0xc3489962, /169.254.245.8:6245 => /169.254.245.8:18329] local: /169.254.245.8:18329 remote: /169.254.245.8:6245
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:18329 remote: /169.254.245.8:6245 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x04de1e91, /169.254.245.8:6645 => /169.254.245.8:5678] local: /169.254.245.8:5678 remote: /169.254.245.8:6645
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:5678 remote: /169.254.245.8:6645 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-1-1413698734073"
+state: FAILED
+exit_code: 1
+ 
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager close
+경고: Force shutdown of: ProcessContainer{containedID='Node-4-1413698734332', nodeID='Node-4', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-4-1413698734332}
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-4-1413698734332', nodeID='Node-4', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-4-1413698734332}
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x3f35faa9, /169.254.245.8:6246 => /169.254.245.8:18329] local: /169.254.245.8:18329 remote: /169.254.245.8:6246
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:18329 remote: /169.254.245.8:6246 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x292f7e09, /169.254.245.8:6646 => /169.254.245.8:5678] local: /169.254.245.8:5678 remote: /169.254.245.8:6646
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:5678 remote: /169.254.245.8:6646 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-4-1413698734332"
+state: FAILED
+exit_code: 1
+ 
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager onEvaluatorException
+경고: Failed evaluator: Node-1-1413698734073
+com.microsoft.reef.exception.EvaluatorException: Evaluator [Node-1-1413698734073] is assumed to be in state [RUNNING]. But the resource manager reports it to be in state [FAILED]. This means that the Evaluator failed but wasn't able to send an error message back to the driver.
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onResourceStatusMessage(EvaluatorManager.java:495)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:57)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:34)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:119)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:99)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:72)
+	at com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onError
+경고: Shutting down the Driver with an exception: 
+java.lang.RuntimeException: No handler bound for FailedEvaluator: FailedEvaluator{id='Node-1-1413698734073'}
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:34)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:26)
+	at com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+	at com.microsoft.reef.util.ExceptionHandlingEventHandler.onNext(ExceptionHandlingEventHandler.java:42)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:82)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:79)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.microsoft.reef.exception.EvaluatorException: Evaluator [Node-1-1413698734073] is assumed to be in state [RUNNING]. But the resource manager reports it to be in state [FAILED]. This means that the Evaluator failed but wasn't able to send an error message back to the driver.
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onResourceStatusMessage(EvaluatorManager.java:495)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:57)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:34)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:119)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:99)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:72)
+	at com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+	... 1 more
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'FAILING'->'FAILING'
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager close
+경고: Force shutdown of: ProcessContainer{containedID='Node-2-1413698734234', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-2-1413698734234}
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-2-1413698734234', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-2-1413698734234}
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x66a60a1c, /169.254.245.8:6244 => /169.254.245.8:18329] local: /169.254.245.8:18329 remote: /169.254.245.8:6244
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x85702504, /169.254.245.8:6644 => /169.254.245.8:5678] local: /169.254.245.8:5678 remote: /169.254.245.8:6644
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:5678 remote: /169.254.245.8:6644 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:18329 remote: /169.254.245.8:6244 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-2-1413698734234"
+state: FAILED
+exit_code: 1
+ 
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager onEvaluatorException
+경고: Failed evaluator: Node-4-1413698734332
+com.microsoft.reef.exception.EvaluatorException: Evaluator [Node-4-1413698734332] is assumed to be in state [RUNNING]. But the resource manager reports it to be in state [FAILED]. This means that the Evaluator failed but wasn't able to send an error message back to the driver.
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onResourceStatusMessage(EvaluatorManager.java:495)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:57)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:34)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:119)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:99)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:72)
+	at com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onError
+경고: Shutting down the Driver with an exception: 
+java.lang.RuntimeException: No handler bound for FailedEvaluator: FailedEvaluator{id='Node-4-1413698734332'}
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:34)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:26)
+	at com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+	at com.microsoft.reef.util.ExceptionHandlingEventHandler.onNext(ExceptionHandlingEventHandler.java:42)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:82)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:79)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.microsoft.reef.exception.EvaluatorException: Evaluator [Node-4-1413698734332] is assumed to be in state [RUNNING]. But the resource manager reports it to be in state [FAILED]. This means that the Evaluator failed but wasn't able to send an error message back to the driver.
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onResourceStatusMessage(EvaluatorManager.java:495)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:57)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:34)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:119)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:99)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:72)
+	at com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+	... 1 more
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'FAILING'->'FAILING'
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager close
+경고: Force shutdown of: ProcessContainer{containedID='Node-3-1413698734297', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-3-1413698734297}
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-3-1413698734297', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-3-1413698734297}
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0xf4c66bbb, /169.254.245.8:6243 => /169.254.245.8:18329] local: /169.254.245.8:18329 remote: /169.254.245.8:6243
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:18329 remote: /169.254.245.8:6243 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager onEvaluatorException
+경고: Failed evaluator: Node-2-1413698734234
+com.microsoft.reef.exception.EvaluatorException: Evaluator [Node-2-1413698734234] is assumed to be in state [RUNNING]. But the resource manager reports it to be in state [FAILED]. This means that the Evaluator failed but wasn't able to send an error message back to the driver. Task [ComputeTask1] was running when the Evaluator crashed.
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onResourceStatusMessage(EvaluatorManager.java:495)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:57)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:34)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:119)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:99)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:72)
+	at com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onError
+경고: Shutting down the Driver with an exception: 
+java.lang.RuntimeException: No handler bound for FailedEvaluator: FailedEvaluator{id='Node-2-1413698734234'}
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:34)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:26)
+	at com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+	at com.microsoft.reef.util.ExceptionHandlingEventHandler.onNext(ExceptionHandlingEventHandler.java:42)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:82)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:79)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.microsoft.reef.exception.EvaluatorException: Evaluator [Node-2-1413698734234] is assumed to be in state [RUNNING]. But the resource manager reports it to be in state [FAILED]. This means that the Evaluator failed but wasn't able to send an error message back to the driver. Task [ComputeTask1] was running when the Evaluator crashed.
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onResourceStatusMessage(EvaluatorManager.java:495)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:57)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:34)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:119)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:99)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:72)
+	at com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+	... 1 more
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'FAILING'->'FAILING'
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x49d7d1fc, /169.254.245.8:6779 => /169.254.245.8:5678] local: /169.254.245.8:5678 remote: /169.254.245.8:6779
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:5678 remote: /169.254.245.8:6779 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver onResourceStatus
+정보: Sending resource status: identifier: "Node-3-1413698734297"
+state: FAILED
+exit_code: 1
+ 
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Releasing Container with containerId [ProcessContainer{containedID='Node-2-1413698734234', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-2-1413698734234}]
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+경고: Unclean shutdown of evaluator Node-1-1413698734073
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-2-1413698734234', nodeID='Node-2', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-2-1413698734234}
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+경고: Unclean shutdown of evaluator Node-4-1413698734332
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+경고: Unclean shutdown of evaluator Node-2-1413698734234
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.Evaluators close
+경고: Unclean shutdown of evaluator Node-3-1413698734297
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager close
+경고: Dirty shutdown of running evaluator id[Node-3-1413698734297]
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager close
+경고: Force resource release because the client closed the clock.
+java.lang.IllegalStateException: Scheduling alarm on a closed clock
+	at com.microsoft.wake.time.runtime.RuntimeClock.scheduleAlarm(RuntimeClock.java:78)
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.close(EvaluatorManager.java:174)
+	at com.microsoft.reef.runtime.common.driver.evaluator.Evaluators.close(Evaluators.java:66)
+	at com.microsoft.reef.runtime.common.driver.DriverRuntimeStopHandler.onNext(DriverRuntimeStopHandler.java:56)
+	at com.microsoft.reef.runtime.common.driver.DriverRuntimeStopHandler.onNext(DriverRuntimeStopHandler.java:34)
+	at com.microsoft.wake.impl.PubSubEventHandler.onNext(PubSubEventHandler.java:95)
+	at com.microsoft.wake.time.runtime.RuntimeClock.run(RuntimeClock.java:223)
+	at com.microsoft.reef.runtime.common.launch.LaunchClass.run(LaunchClass.java:159)
+	at com.microsoft.reef.runtime.common.Launcher.main(Launcher.java:108)
+
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 3, Outstanding requests: 0
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Releasing Container with containerId [ProcessContainer{containedID='Node-4-1413698734332', nodeID='Node-4', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-4-1413698734332}]
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-4-1413698734332', nodeID='Node-4', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-4-1413698734332}
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 2, Outstanding requests: 0
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Releasing Container with containerId [ProcessContainer{containedID='Node-1-1413698734073', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-1-1413698734073}]
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-1-1413698734073', nodeID='Node-1', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-1-1413698734073}
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 1, Outstanding requests: 0
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Releasing Container with containerId [ProcessContainer{containedID='Node-3-1413698734297', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-3-1413698734297}]
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.local.driver.ProcessContainer close
+경고: Force-closing a container that is still running: ProcessContainer{containedID='Node-3-1413698734297', nodeID='Node-3', errorHandlerRID='socket://169.254.245.8:18329', folder=C:\Users\jw\Dropbox\git\SGD-LinearRegression_on_REEF\REEF_LOCAL_RUNTIME\SGD_Linear-1413698731895\Node-3-1413698734297}
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.local.process.RunnableProcess cancel
+경고: The child process survived Process.destroy()
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 0, Outstanding requests: 0
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+정보: All components indicated idle. Initiating Driver shutdown.
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'FAILING'->'SHUTTING_DOWN'
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.local.driver.ContainerManager release
+정보: Ignoring release request for unknown containerID [Node-3-1413698734297]
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+정보: All components indicated idle. Initiating Driver shutdown.
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.local.driver.ResourceManager sendRuntimeStatus
+정보: Allocated: 0, Outstanding requests: 0
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'FAILING'->'SHUTTING_DOWN'
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager sendJobEndingMessageToClient
+경고: Sending message about an unclean driver shutdown.
+java.lang.RuntimeException: No handler bound for FailedEvaluator: FailedEvaluator{id='Node-2-1413698734234'}
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:34)
+	at com.microsoft.reef.runtime.common.driver.defaults.DefaultEvaluatorFailureHandler.onNext(DefaultEvaluatorFailureHandler.java:26)
+	at com.microsoft.reef.runtime.common.utils.BroadCastEventHandler.onNext(BroadCastEventHandler.java:34)
+	at com.microsoft.reef.util.ExceptionHandlingEventHandler.onNext(ExceptionHandlingEventHandler.java:42)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:82)
+	at com.microsoft.reef.runtime.common.utils.DispatchingEStage$1.onNext(DispatchingEStage.java:79)
+	at com.microsoft.wake.impl.ThreadPoolStage$1.run(ThreadPoolStage.java:182)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.microsoft.reef.exception.EvaluatorException: Evaluator [Node-2-1413698734234] is assumed to be in state [RUNNING]. But the resource manager reports it to be in state [FAILED]. This means that the Evaluator failed but wasn't able to send an error message back to the driver. Task [ComputeTask1] was running when the Evaluator crashed.
+	at com.microsoft.reef.runtime.common.driver.evaluator.EvaluatorManager.onResourceStatusMessage(EvaluatorManager.java:495)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:57)
+	at com.microsoft.reef.runtime.common.driver.resourcemanager.ResourceStatusHandler.onNext(ResourceStatusHandler.java:34)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onResourceStatus(ReefRunnableProcessObserver.java:119)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onUncleanExit(ReefRunnableProcessObserver.java:99)
+	at com.microsoft.reef.runtime.local.process.ReefRunnableProcessObserver.onProcessExit(ReefRunnableProcessObserver.java:72)
+	at com.microsoft.reef.runtime.local.process.RunnableProcess.run(RunnableProcess.java:159)
+	... 1 more
+
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.idle.DriverIdleManager onPotentiallyIdle
+정보: All components indicated idle. Initiating Driver shutdown.
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager onComplete
+정보: Clean shutdown of the Driver.
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverStatusManager setStatus
+경고: Illegal state transiton: 'FAILING'->'SHUTTING_DOWN'
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.driver.DriverRuntimeStopHandler onNext
+정보: Driver shutdown complete
+10월 19, 2014 3:05:41 오후 com.microsoft.reef.runtime.common.Launcher main
+정보: Exiting Launcher.main()

@@ -1,0 +1,70 @@
+10월 19, 2014 3:55:31 오후 com.microsoft.reef.runtime.common.evaluator.context.defaults.DefaultContextStartHandler onNext
+정보: DefaultContextStartHandler received: com.microsoft.reef.runtime.common.evaluator.context.ContextStartImpl@5f6b6496
+10월 19, 2014 3:55:33 오후 snu.BDCS.SGD_Linear_Regression.ControllerTask call
+정보: Scattering Data
+10월 19, 2014 3:55:33 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask1 on NameServer /169.254.245.8:5678
+10월 19, 2014 3:55:33 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask2 on NameServer /169.254.245.8:5678
+10월 19, 2014 3:55:33 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ComputeTask3 on NameServer /169.254.245.8:5678
+10월 19, 2014 3:55:33 오후 snu.BDCS.SGD_Linear_Regression.ControllerTask call
+정보: Finished Scattering Data
+10월 19, 2014 3:55:34 오후 com.microsoft.reef.runtime.common.evaluator.context.ContextRuntime close
+경고: Shutting down a task because the underlying context is being closed.
+10월 19, 2014 3:55:34 오후 com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime close
+경고: Trying to close a task that is in state: DONE. Ignoring.
+10월 19, 2014 3:55:34 오후 com.microsoft.reef.runtime.common.evaluator.context.defaults.DefaultContextStopHandler onNext
+정보: DefaultContextStopHandler received: com.microsoft.reef.runtime.common.evaluator.context.ContextStopImpl@1819b264
+10월 19, 2014 3:55:34 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0x5827db36, /169.254.245.8:6424 => jw-PC/169.254.245.8:7001] local: /169.254.245.8:6424 remote: jw-PC/169.254.245.8:7001
+10월 19, 2014 3:55:34 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:55:34 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+정보: Unexpected exception from downstream. channel: [id: 0xd139ee83, /169.254.245.8:6427 => /169.254.245.8:7000] local: /169.254.245.8:7000 remote: /169.254.245.8:6427
+10월 19, 2014 3:55:34 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:6424 remote: jw-PC/169.254.245.8:7001 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:55:34 오후 com.microsoft.wake.remote.transport.netty.NettyChannelHandler exceptionCaught
+경고: Unexpected exception from downstream.
+java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:379)
+	at io.netty.buffer.UnpooledUnsafeDirectByteBuf.setBytes(UnpooledUnsafeDirectByteBuf.java:446)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:879)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:225)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:114)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:511)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:468)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:382)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:354)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:116)
+	at java.lang.Thread.run(Thread.java:745)
+
+10월 19, 2014 3:55:34 오후 com.microsoft.reef.io.network.group.impl.ExceptionHandler onNext
+심각: Exception occurred while processing a GroupComm operation caused by null
+10월 19, 2014 3:55:34 오후 com.microsoft.wake.remote.transport.netty.AbstractNettyEventListener exceptionCaught
+경고: ExceptionEvent: local: /169.254.245.8:7000 remote: /169.254.245.8:6427 :: java.io.IOException: 현재 연결은 원격 호스트에 의해 강제로 끊겼습니다
+10월 19, 2014 3:55:34 오후 com.microsoft.reef.io.network.group.impl.ExceptionHandler onNext
+심각: Exception occurred while processing a GroupComm operation caused by null
+10월 19, 2014 3:55:34 오후 com.microsoft.reef.runtime.common.Launcher main
+정보: Exiting Launcher.main()

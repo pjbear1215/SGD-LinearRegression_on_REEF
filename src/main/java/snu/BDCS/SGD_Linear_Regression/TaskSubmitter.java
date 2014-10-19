@@ -163,7 +163,7 @@ public class TaskSubmitter implements EventHandler<Iterable<ActiveContext>> {
         // will have VectorCodec and use VectorConcat as
         // the reduce function. The id2port should not be
         // there but we need to hold on for 143's fix
-        operators = new GroupOperators(VectorCodec.class, VectorConcat.class,
+        operators = new GroupOperators(VectorCodec.class, VectorAverage.class,
                 nameServiceAddr, nameServicePort, id2port);
 
         // Fluent syntax for adding the group communication
@@ -178,7 +178,7 @@ public class TaskSubmitter implements EventHandler<Iterable<ActiveContext>> {
         // Here the reduce function though same put it in
         // to illustrate
         operators.addReduce().setReceiver(controllerId)
-                .setSenders(computeTaskIds).setRedFuncClass(VectorConcat.class);
+                .setSenders(computeTaskIds).setRedFuncClass(VectorAverage.class);
 
         // Launch ComputeTasks first
         for (int i = 0; i < contextList.size(); i++) {

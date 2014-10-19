@@ -1,0 +1,22 @@
+10월 19, 2014 3:05:38 오후 com.microsoft.reef.runtime.common.evaluator.context.defaults.DefaultContextStartHandler onNext
+정보: DefaultContextStartHandler received: com.microsoft.reef.runtime.common.evaluator.context.ContextStartImpl@5f6b6496
+10월 19, 2014 3:05:39 오후 snu.BDCS.SGD_Linear_Regression.ComputeTask call
+정보: Waiting for scatterReceive
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.io.network.naming.NameLookupClient remoteLookup
+정보: Looking up ControllerTask on NameServer /169.254.245.8:5678
+10월 19, 2014 3:05:40 오후 snu.BDCS.SGD_Linear_Regression.ComputeTask call
+정보: Received: []
+10월 19, 2014 3:05:40 오후 com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime run
+경고: Caught an exception during Task.call().
+java.lang.NullPointerException
+	at snu.BDCS.SGD_Linear_Regression.VectorCodec.encode(VectorCodec.java:44)
+	at snu.BDCS.SGD_Linear_Regression.VectorCodec.encode(VectorCodec.java:18)
+	at com.microsoft.reef.io.network.group.impl.operators.SenderHelperImpl.send(SenderHelperImpl.java:61)
+	at com.microsoft.reef.io.network.group.impl.operators.SenderHelperImpl.send(SenderHelperImpl.java:49)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.GatherOp$Sender.send(GatherOp.java:65)
+	at com.microsoft.reef.io.network.group.impl.operators.basic.ReduceOp$Sender.send(ReduceOp.java:63)
+	at snu.BDCS.SGD_Linear_Regression.ComputeTask.call(ComputeTask.java:72)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.runTask(TaskRuntime.java:262)
+	at com.microsoft.reef.runtime.common.evaluator.task.TaskRuntime.run(TaskRuntime.java:123)
+	at java.lang.Thread.run(Thread.java:745)
+

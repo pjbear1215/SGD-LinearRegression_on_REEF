@@ -1,0 +1,31 @@
+Instantiated 'LinearSGD_Driver'
+StartTime: com.microsoft.wake.time.event.StartTime[1413701439602]
+Received an AllocatedEvaluator. Submitting it.
+Received an AllocatedEvaluator. Submitting it.
+Received an AllocatedEvaluator. Submitting it.
+Received an AllocatedEvaluator. Submitting it.
+Received a RunningEvaluator with ID: SGD_Linear.
+Received a RunningEvaluator with ID: SGD_Linear.
+Received a RunningEvaluator with ID: SGD_Linear.
+Received a RunningEvaluator with ID: SGD_Linear.
+Task ComputeTask3 is running!
+Task ComputeTask1 is running!
+Task ComputeTask2 is running!
+Task ControllerTask is running!
+Task ControllerTask is done.
+****************** RESULT ******************
+Theta 0: -0.33480879778217343
+Theta 1: 0.15505105931108795
+Theta 2: 1.3387828096238306
+Theta 3: 1.0209064599302928
+Theta 4: 0.9024773598627395
+Theta 5: 1.438839104668696
+
+********************************************
+Task ComputeTask2 is done.
+Releasing Context SGD_Linear.
+Task ComputeTask3 is done.
+Releasing Context SGD_Linear.
+Task ComputeTask1 is done.
+Releasing Context SGD_Linear.
+Releasing Context SGD_Linear.

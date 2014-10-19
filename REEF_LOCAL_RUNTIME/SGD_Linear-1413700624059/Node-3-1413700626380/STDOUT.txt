@@ -1,0 +1,9 @@
+Scattering Data
+Finished Scattering Data
+The Number of Received vectors: 3.0
+Sum of theta[0] =1.8000000000000003
+Sum of theta[1] =1.8000000000000003
+Sum of theta[2] =1.8000000000000003
+Sum of theta[3] =1.8000000000000003
+Sum of theta[4] =1.8000000000000003
+Sum of theta[5] =1.8000000000000003

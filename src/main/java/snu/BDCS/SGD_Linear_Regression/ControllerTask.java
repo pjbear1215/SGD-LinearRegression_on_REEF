@@ -393,14 +393,9 @@ public class ControllerTask implements Task {
         scatterSender.send(exampleSet);
         logger.log(Level.INFO, "Finished Scattering Data");
         System.out.print( "Finished Scattering Data\n");
-        Vector result = new DenseVector(6);
-
-        // Receive a concatenated vector of the
-        // partial sums computed by each computeTask
-        Vector temp = reduceReceiver.reduce();
+        Vector result = reduceReceiver.reduce();
         // Accumulate the result
-
-        String resStr = resultString(temp);
+        String resStr = resultString(result);
         return resStr.getBytes();
     }
 
@@ -422,16 +417,6 @@ public class ControllerTask implements Task {
             sb.append("Theta " + i + ": " + res[i] + "\n");
         }
 
-        return sb.toString();
-    }
-
-    private String rowString(int[] a) {
-        StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < a.length; i++) {
-            sb.append(String.format("%4d", a[i]));
-            if (i < a.length - 1)
-                sb.append(", ");
-        }
         return sb.toString();
     }
 }

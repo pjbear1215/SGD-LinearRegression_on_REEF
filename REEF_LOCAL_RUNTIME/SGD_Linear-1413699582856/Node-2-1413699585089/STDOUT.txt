@@ -1,0 +1,15 @@
+Scattering Data
+Finished Scattering Data
+element: DenseVector(6.000, 6.000, 6.000, 6.000, 6.000, 6.000)
+zero: DenseVector(0.000, 0.000, 0.000, 0.000, 0.000, 0.000)
+element: DenseVector(0.000, 0.000, 0.000, 0.000, 0.000, 0.000)
+zero: DenseVector(0.000, 0.000, 0.000, 0.000, 0.000, 0.000)
+element: DenseVector(0.000, 0.000, 0.000, 0.000, 0.000, 0.000)
+zero: DenseVector(0.000, 0.000, 0.000, 0.000, 0.000, 0.000)
+The Number of Received vectors: 3.0
+Sum of theta[0] =6.0
+Sum of theta[1] =6.0
+Sum of theta[2] =6.0
+Sum of theta[3] =6.0
+Sum of theta[4] =6.0
+Sum of theta[5] =6.0
